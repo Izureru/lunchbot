@@ -1,0 +1,19 @@
+{
+  "name": "lunchbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lunchbot.js",
+  "scripts": {
+    "start": "node lunchbot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Izureru",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^3.5.1",
+    "botkit": "^0.2.2",
+    "morgan": "^1.7.0",
+    "request": "^2.74.0",
+    "restify": "^4.1.1"
+  }
+}
