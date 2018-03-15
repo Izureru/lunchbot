@@ -3,6 +3,9 @@ var logger = require('morgan')
 var request = require('request');
 
 var VERIFY_TOKEN = process.env.SLACK_VERIFY_TOKEN;
+var msqId = process.env.MSQ_ID;
+var wsId = process.env.WS_ID;
+var ebtId = process.env.EBT_ID;
 
 if (!VERIFY_TOKEN) {
   console.error('SLACK_VERIFY_TOKEN is required')
@@ -28,9 +31,6 @@ console.log(weekday[d.getDay()]);
     return weekday[d.getDay()];
 }
 
-var msqId = "1l8dez1pNimkapEMpwIpQJCX8IklWF-P8m5OmHx5UGqg";
-var wsId = "1ql5Ej3p_WUVhMhig6dD-L3xlLoJ4L4gyQaiIyNXfq34";
-var ebtId = "1ZGGJ4Zq1FdoOybgXUD905-9nj4Vs5P2p7IS1S3r9uVo";
 var spreadSheetId = '';
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadSheetId + "/od6/public/values?alt=json";
 var dayNameVar = 'gsx$' + getDay().toLowerCase();
