@@ -74,9 +74,3 @@ server.listen(PORT, function (err) {
 
   console.log('Server successfully started on port %s', PORT)
 })
-
-
-<script>
-  
-
-</script>
